@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Jan 25 21:23:26 2024
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : uart_loopback_top
+Top-level Entity Name : uart_loopback_top
+Family : Cyclone IV E
+Total logic elements : 1,565
+    Total combinational functions : 1,182
+    Dedicated logic registers : 1,002
+Total registers : 1002
+Total pins : 25
+Total virtual pins : 0
+Total memory bits : 200,704
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

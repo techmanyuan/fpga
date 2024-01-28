@@ -1,0 +1,14 @@
+Partition Merge Status : Successful - Tue Aug 08 05:00:53 2023
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : uart_loopback_top
+Top-level Entity Name : uart_loopback_top
+Family : Cyclone IV E
+Total logic elements : 812
+    Total combinational functions : 472
+    Dedicated logic registers : 639
+Total registers : 639
+Total pins : 20
+Total virtual pins : 0
+Total memory bits : 131,072
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

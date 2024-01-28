@@ -1,0 +1,354 @@
+Partition Merge report for uart_loopback_top
+Tue Aug 08 05:00:53 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Partition Merge Netlist Types Used
+  4. Connections to In-System Debugging Instance "auto_signaltap_0"
+  5. Partition Merge Partition Statistics
+  6. Partition Merge Partition Pin Processing
+  7. Partition Merge Resource Usage Summary
+  8. Partition Merge RAM Summary
+  9. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------+
+; Partition Merge Summary                                                               ;
++------------------------------------+--------------------------------------------------+
+; Partition Merge Status             ; Successful - Tue Aug 08 05:00:53 2023            ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
+; Revision Name                      ; uart_loopback_top                                ;
+; Top-level Entity Name              ; uart_loopback_top                                ;
+; Family                             ; Cyclone IV E                                     ;
+; Total logic elements               ; 812                                              ;
+;     Total combinational functions  ; 472                                              ;
+;     Dedicated logic registers      ; 639                                              ;
+; Total registers                    ; 639                                              ;
+; Total pins                         ; 20                                               ;
+; Total virtual pins                 ; 0                                                ;
+; Total memory bits                  ; 131,072                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                                ;
+; Total PLLs                         ; 0                                                ;
++------------------------------------+--------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                                            ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used ; Netlist Type Requested ; Partition Contents             ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Top                            ; User-created   ; Source File       ; Post-Fit               ;                                ;
+; sld_hub:auto_hub               ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_hub:auto_hub               ;
+; sld_signaltap:auto_signaltap_0 ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_signaltap:auto_signaltap_0 ;
+; hard_block:auto_generated_inst ; Auto-generated ; Source File       ; Source File            ; hard_block:auto_generated_inst ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                                                                                   ;
++--------------+--------------+-----------+----------------+-------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------+
+; Name         ; Type         ; Status    ; Partition Name ; Netlist Type Used ; Actual Connection                                                                                                                       ; Details ;
++--------------+--------------+-----------+----------------+-------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------+
+; dac_data1[0] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst1|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a0 ; N/A     ;
+; dac_data1[0] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst1|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a0 ; N/A     ;
+; dac_data1[1] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst1|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a1 ; N/A     ;
+; dac_data1[1] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst1|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a1 ; N/A     ;
+; dac_data1[2] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst1|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a2 ; N/A     ;
+; dac_data1[2] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst1|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a2 ; N/A     ;
+; dac_data1[3] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst1|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a3 ; N/A     ;
+; dac_data1[3] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst1|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a3 ; N/A     ;
+; dac_data1[4] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst1|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a4 ; N/A     ;
+; dac_data1[4] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst1|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a4 ; N/A     ;
+; dac_data1[5] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst1|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a5 ; N/A     ;
+; dac_data1[5] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst1|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a5 ; N/A     ;
+; dac_data1[6] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst1|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a6 ; N/A     ;
+; dac_data1[6] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst1|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a6 ; N/A     ;
+; dac_data1[7] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst1|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a7 ; N/A     ;
+; dac_data1[7] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst1|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a7 ; N/A     ;
+; dac_data2[0] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst2|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a0 ; N/A     ;
+; dac_data2[0] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst2|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a0 ; N/A     ;
+; dac_data2[1] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst2|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a1 ; N/A     ;
+; dac_data2[1] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst2|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a1 ; N/A     ;
+; dac_data2[2] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst2|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a2 ; N/A     ;
+; dac_data2[2] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst2|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a2 ; N/A     ;
+; dac_data2[3] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst2|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a3 ; N/A     ;
+; dac_data2[3] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst2|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a3 ; N/A     ;
+; dac_data2[4] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst2|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a4 ; N/A     ;
+; dac_data2[4] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst2|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a4 ; N/A     ;
+; dac_data2[5] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst2|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a5 ; N/A     ;
+; dac_data2[5] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst2|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a5 ; N/A     ;
+; dac_data2[6] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst2|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a6 ; N/A     ;
+; dac_data2[6] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst2|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a6 ; N/A     ;
+; dac_data2[7] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst2|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a7 ; N/A     ;
+; dac_data2[7] ; post-fitting ; connected ; Top            ; post-synthesis    ; dds:dds_inst2|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ram_block1a7 ; N/A     ;
+; sys_clk      ; post-fitting ; connected ; Top            ; post-synthesis    ; sys_clk                                                                                                                                 ; N/A     ;
++--------------+--------------+-----------+----------------+-------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Statistics                                                                                                     ;
++---------------------------------------------+-------+------------------+--------------------------------+--------------------------------+
+; Statistic                                   ; Top   ; sld_hub:auto_hub ; sld_signaltap:auto_signaltap_0 ; hard_block:auto_generated_inst ;
++---------------------------------------------+-------+------------------+--------------------------------+--------------------------------+
+; Estimated Total logic elements              ; 56    ; 143              ; 613                            ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Total combinational functions               ; 34    ; 119              ; 319                            ; 0                              ;
+; Logic element usage by number of LUT inputs ;       ;                  ;                                ;                                ;
+;     -- 4 input functions                    ; 0     ; 50               ; 138                            ; 0                              ;
+;     -- 3 input functions                    ; 1     ; 32               ; 81                             ; 0                              ;
+;     -- <=2 input functions                  ; 33    ; 37               ; 100                            ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Logic elements by mode                      ;       ;                  ;                                ;                                ;
+;     -- normal mode                          ; 5     ; 111              ; 265                            ; 0                              ;
+;     -- arithmetic mode                      ; 29    ; 8                ; 54                             ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Total registers                             ; 55    ; 86               ; 498                            ; 0                              ;
+;     -- Dedicated logic registers            ; 55    ; 86               ; 498                            ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Virtual pins                                ; 0     ; 0                ; 0                              ; 0                              ;
+; I/O pins                                    ; 20    ; 0                ; 0                              ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 0     ; 0                ; 0                              ; 0                              ;
+; Total memory bits                           ; 65536 ; 0                ; 65536                          ; 0                              ;
+; Total RAM block bits                        ; 0     ; 0                ; 0                              ; 0                              ;
+; JTAG                                        ; 1     ; 0                ; 0                              ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Connections                                 ;       ;                  ;                                ;                                ;
+;     -- Input Connections                    ; 1     ; 127              ; 693                            ; 0                              ;
+;     -- Registered Input Connections         ; 0     ; 97               ; 558                            ; 0                              ;
+;     -- Output Connections                   ; 684   ; 136              ; 1                              ; 0                              ;
+;     -- Registered Output Connections        ; 32    ; 135              ; 0                              ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Internal Connections                        ;       ;                  ;                                ;                                ;
+;     -- Total Connections                    ; 1167  ; 781              ; 2969                           ; 0                              ;
+;     -- Registered Connections               ; 297   ; 565              ; 1985                           ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; External Connections                        ;       ;                  ;                                ;                                ;
+;     -- Top                                  ; 0     ; 119              ; 566                            ; 0                              ;
+;     -- sld_hub:auto_hub                     ; 119   ; 16               ; 128                            ; 0                              ;
+;     -- sld_signaltap:auto_signaltap_0       ; 566   ; 128              ; 0                              ; 0                              ;
+;     -- hard_block:auto_generated_inst       ; 0     ; 0                ; 0                              ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Partition Interface                         ;       ;                  ;                                ;                                ;
+;     -- Input Ports                          ; 6     ; 19               ; 89                             ; 0                              ;
+;     -- Output Ports                         ; 18    ; 37               ; 42                             ; 0                              ;
+;     -- Bidir Ports                          ; 0     ; 0                ; 0                              ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Registered Ports                            ;       ;                  ;                                ;                                ;
+;     -- Registered Input Ports               ; 0     ; 4                ; 37                             ; 0                              ;
+;     -- Registered Output Ports              ; 0     ; 26               ; 33                             ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Port Connectivity                           ;       ;                  ;                                ;                                ;
+;     -- Input Ports driven by GND            ; 0     ; 1                ; 0                              ; 0                              ;
+;     -- Output Ports driven by GND           ; 0     ; 1                ; 0                              ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0     ; 0                ; 0                              ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0     ; 0                ; 0                              ; 0                              ;
+;     -- Input Ports with no Source           ; 0     ; 1                ; 35                             ; 0                              ;
+;     -- Output Ports with no Source          ; 0     ; 0                ; 0                              ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0     ; 2                ; 40                             ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0     ; 15               ; 33                             ; 0                              ;
++---------------------------------------------+-------+------------------+--------------------------------+--------------------------------+
+Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
+
+
++----------------------------------------------------------------------------------------+
+; Partition Merge Partition Pin Processing                                               ;
++-----------------------------------+-----------+---------------+----------+-------------+
+; Name                              ; Partition ; Type          ; Location ; Status      ;
++-----------------------------------+-----------+---------------+----------+-------------+
+; altera_reserved_tck               ; Top       ; Input Port    ; n/a      ;             ;
+;     -- altera_reserved_tck        ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- altera_reserved_tck~input  ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; altera_reserved_tdi               ; Top       ; Input Port    ; n/a      ;             ;
+;     -- altera_reserved_tdi        ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- altera_reserved_tdi~input  ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; altera_reserved_tdo               ; Top       ; Output Port   ; n/a      ;             ;
+;     -- altera_reserved_tdo        ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- altera_reserved_tdo~output ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; altera_reserved_tms               ; Top       ; Input Port    ; n/a      ;             ;
+;     -- altera_reserved_tms        ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- altera_reserved_tms~input  ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; dac_clk                           ; Top       ; Output Port   ; n/a      ;             ;
+;     -- dac_clk                    ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- dac_clk~output             ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; dac_data1[0]                      ; Top       ; Output Port   ; n/a      ;             ;
+;     -- dac_data1[0]               ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- dac_data1[0]~output        ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; dac_data1[1]                      ; Top       ; Output Port   ; n/a      ;             ;
+;     -- dac_data1[1]               ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- dac_data1[1]~output        ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; dac_data1[2]                      ; Top       ; Output Port   ; n/a      ;             ;
+;     -- dac_data1[2]               ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- dac_data1[2]~output        ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; dac_data1[3]                      ; Top       ; Output Port   ; n/a      ;             ;
+;     -- dac_data1[3]               ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- dac_data1[3]~output        ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; dac_data1[4]                      ; Top       ; Output Port   ; n/a      ;             ;
+;     -- dac_data1[4]               ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- dac_data1[4]~output        ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; dac_data1[5]                      ; Top       ; Output Port   ; n/a      ;             ;
+;     -- dac_data1[5]               ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- dac_data1[5]~output        ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; dac_data1[6]                      ; Top       ; Output Port   ; n/a      ;             ;
+;     -- dac_data1[6]               ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- dac_data1[6]~output        ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; dac_data1[7]                      ; Top       ; Output Port   ; n/a      ;             ;
+;     -- dac_data1[7]               ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- dac_data1[7]~output        ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; dac_data2[0]                      ; Top       ; Output Port   ; n/a      ;             ;
+;     -- dac_data2[0]               ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- dac_data2[0]~output        ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; dac_data2[1]                      ; Top       ; Output Port   ; n/a      ;             ;
+;     -- dac_data2[1]               ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- dac_data2[1]~output        ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; dac_data2[2]                      ; Top       ; Output Port   ; n/a      ;             ;
+;     -- dac_data2[2]               ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- dac_data2[2]~output        ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; dac_data2[3]                      ; Top       ; Output Port   ; n/a      ;             ;
+;     -- dac_data2[3]               ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- dac_data2[3]~output        ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; dac_data2[4]                      ; Top       ; Output Port   ; n/a      ;             ;
+;     -- dac_data2[4]               ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- dac_data2[4]~output        ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; dac_data2[5]                      ; Top       ; Output Port   ; n/a      ;             ;
+;     -- dac_data2[5]               ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- dac_data2[5]~output        ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; dac_data2[6]                      ; Top       ; Output Port   ; n/a      ;             ;
+;     -- dac_data2[6]               ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- dac_data2[6]~output        ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; dac_data2[7]                      ; Top       ; Output Port   ; n/a      ;             ;
+;     -- dac_data2[7]               ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- dac_data2[7]~output        ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; sys_clk                           ; Top       ; Input Port    ; n/a      ;             ;
+;     -- sys_clk                    ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- sys_clk~input              ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; sys_rst_n                         ; Top       ; Input Port    ; n/a      ;             ;
+;     -- sys_rst_n                  ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- sys_rst_n~input            ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
+; uart_rxd                          ; Top       ; Input Port    ; n/a      ;             ;
+;     -- uart_rxd                   ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- uart_rxd~input             ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                   ;           ;               ;          ;             ;
++-----------------------------------+-----------+---------------+----------+-------------+
+
+
++-------------------------------------------------------------+
+; Partition Merge Resource Usage Summary                      ;
++---------------------------------------------+---------------+
+; Resource                                    ; Usage         ;
++---------------------------------------------+---------------+
+; Estimated Total logic elements              ; 812           ;
+;                                             ;               ;
+; Total combinational functions               ; 472           ;
+; Logic element usage by number of LUT inputs ;               ;
+;     -- 4 input functions                    ; 188           ;
+;     -- 3 input functions                    ; 114           ;
+;     -- <=2 input functions                  ; 170           ;
+;                                             ;               ;
+; Logic elements by mode                      ;               ;
+;     -- normal mode                          ; 381           ;
+;     -- arithmetic mode                      ; 91            ;
+;                                             ;               ;
+; Total registers                             ; 639           ;
+;     -- Dedicated logic registers            ; 639           ;
+;     -- I/O registers                        ; 0             ;
+;                                             ;               ;
+; I/O pins                                    ; 20            ;
+; Total memory bits                           ; 131072        ;
+; Embedded Multiplier 9-bit elements          ; 0             ;
+; Maximum fan-out node                        ; sys_clk~input ;
+; Maximum fan-out                             ; 371           ;
+; Total fan-out                               ; 4076          ;
+; Average fan-out                             ; 3.42          ;
++---------------------------------------------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge RAM Summary                                                                                                                                                                                                                                                                                                                                   ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+--------------------------------------------------------+
+; Name                                                                                                                                                                                                  ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF                                                    ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+--------------------------------------------------------+
+; dds:dds_inst1|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ALTSYNCRAM                                                                 ; AUTO ; ROM              ; 16384        ; 8            ; --           ; --           ; 131072 ; ../../../../Downloads/FPGA/25_dds/mif/wave_16384x8.mif ;
+; dds:dds_inst2|dds_ctrl:dds_ctrl_inst|rom_wave:rom_wave_inst|altsyncram:altsyncram_component|altsyncram_cjc1:auto_generated|ALTSYNCRAM                                                                 ; AUTO ; ROM              ; 16384        ; 8            ; --           ; --           ; 131072 ; ../../../../Downloads/FPGA/25_dds/mif/wave_16384x8.mif ;
+; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_n124:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 4096         ; 16           ; 4096         ; 16           ; 65536  ; None                                                   ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+--------------------------------------------------------+
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Partition Merge
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Tue Aug 08 05:00:52 2023
+Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off uart_loopback_top -c uart_loopback_top --merge=on
+Warning (35010): Previously generated Fitter netlist for partition "Top" is older than current Synthesis netlist -- using the current Synthesis netlist instead to ensure that the latest source changes are included
+    Info (35011): Set the option to Ignore source file changes to force the Quartus II software to always use a previously generated Fitter netlist
+Info (35007): Using synthesis netlist for partition "Top"
+Info (35007): Using synthesis netlist for partition "sld_hub:auto_hub"
+Info (35007): Using synthesis netlist for partition "sld_signaltap:auto_signaltap_0"
+Info (35024): Succesfully connected in-system debug instance "auto_signaltap_0" to all 33 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
+Info (35002): Resolved and merged 3 partition(s)
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "uart_rxd"
+Info (21057): Implemented 886 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 18 output pins
+    Info (21061): Implemented 829 logic cells
+    Info (21064): Implemented 32 RAM segments
+Info: Quartus II 64-Bit Partition Merge was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4613 megabytes
+    Info: Processing ended: Tue Aug 08 05:00:53 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

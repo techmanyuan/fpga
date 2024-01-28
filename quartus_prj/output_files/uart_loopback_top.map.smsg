@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at dds_ctrl.v(41): always construct contains both blocking and non-blocking assignments File: D:/diansai/fpga/rtl/dds_ctrl.v Line: 41
